@@ -15,7 +15,8 @@
     </li>
     <li class="active">
         <a *ngFor="let item of historial"
-            href="#">
+        (click)="buscar( item )"
+        href="#">
           <span class="fa fa-list-ol mr-3" aria-hidden="true"></span> {{ item | titlecase }}
         </a>
     </li>
